@@ -34,6 +34,7 @@ blob_fixups: blob_fixups_user_type = {
     (
         'vendor/lib64/libnvram.so',
         'vendor/lib64/libsysenv.so',
+        'vendor/lib64/nfc_nci_nxpsn.so',
         'vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-mtk-neuron',
         'vendor/bin/hw/samsung.software.media.c2@1.0-service',
         'vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b'): blob_fixup()
