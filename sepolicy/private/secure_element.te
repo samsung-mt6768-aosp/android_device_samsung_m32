@@ -1,2 +1,0 @@
-dontaudit secure_element system_data_file:dir { create add_name };
-allow secure_element system_data_file:file { read open getattr };

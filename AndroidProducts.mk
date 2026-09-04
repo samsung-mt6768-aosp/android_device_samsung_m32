@@ -8,8 +8,6 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/lineage_m32.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_m32-ap2a-user \
-    lineage_m32-ap2a-userdebug \
     lineage_m32-user \
     lineage_m32-userdebug \
     lineage_m32-eng

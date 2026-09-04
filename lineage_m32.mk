@@ -4,7 +4,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
@@ -20,12 +19,13 @@ PRODUCT_DEVICE := m32
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-M325FV
+PRODUCT_SHIPPING_API_LEVEL := 30
 
 PRODUCT_GMS_CLIENTID_BASE := android-samsung-ss
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_DEVICE=m32 \
-    PRODUCT_NAME=m32xx \
-    PRIVATE_BUILD_DESC="m32xx-user 13 TP1A.220624.014 M325FVXXSCDYD1 release-keys"
+PRODUCT_BUILD_DESCRIPTION := m32xx-user 13 TP1A.220624.014 M325FVXXSCDYD1 release-keys
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.product.device=m32
 
 BUILD_FINGERPRINT := samsung/m32xx/m32:13/TP1A.220624.014/M325FVXXSCDYD1:user/release-keys

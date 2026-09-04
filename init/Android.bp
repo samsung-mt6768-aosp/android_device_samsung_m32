@@ -15,7 +15,7 @@
 //
 
 cc_library_static {
-    name: "libinit_m32",
+    name: "libinit_a32",
     recovery_available: true,
     srcs: [
         "init.cpp"
