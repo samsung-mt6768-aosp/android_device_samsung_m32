@@ -9,6 +9,11 @@ include device/samsung/mt6768-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/samsung/m32
 
+# VINTF
+DEVICE_MANIFEST_FILE := \
+    $(DEVICE_PATH)/configs/vintf/manifest.xml \
+    $(DEVICE_PATH)/configs/vintf/manifest_touch_full.xml
+
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
