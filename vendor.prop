@@ -9,3 +9,7 @@ ro.hardware.chipname=MT6769T
 
 # Netflix
 ro.netflix.bsp_rev=MTK6769-33944-1
+
+# DPI
+ro.sf.lcd_density=420
+
