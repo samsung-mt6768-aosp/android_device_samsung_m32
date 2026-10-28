@@ -34,5 +34,10 @@ PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
 
 PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
 
+# AAPT Configuration for high-density assets
+PRODUCT_AAPT_CONFIG := normal hdpi xhdpi xxhdpi xxxhdpi
+PRODUCT_AAPT_PREF_CONFIG := xxhdpi
+TARGET_SCREEN_DENSITY := 420
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/samsung/m32/m32-vendor.mk)
