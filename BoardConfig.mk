@@ -9,6 +9,11 @@ include device/samsung/mt6768-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/samsung/m32
 
+# dtbo: SKU-exaktes Stock-Prebuilt aus M325FVXXSCDYD1 (Include-then-Override
+# nach Common-BoardConfig - ersetzt das A32-DTBO der Common-Prebuilts,
+# PLAN-M325F-DUAL-BUILD §3/§5 Stufe 4)
+BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilts/dtbo.img
+
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
